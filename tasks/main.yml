@@ -4,7 +4,7 @@
 - name: "Create /etc/salt/minion.d/master.conf"
   copy:
     dest: '/etc/salt/minion.d/master.conf'
-    content: "master: {{ salt_master_ip_or_hostname }}"
+    content: "master: {{ salt_master_ip_or_hostname }}\n"
     owner: 'root'
     group: 'root'
     mode: '0644'
