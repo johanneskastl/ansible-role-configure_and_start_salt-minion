@@ -1,0 +1,4 @@
+---
+# configure_and_start_salt-minion/defaults/main.yml
+
+salt_master_ip_or_hostname: 'salt'
