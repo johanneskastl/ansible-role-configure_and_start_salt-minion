@@ -25,7 +25,8 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: johanneskastl.configure_and_start_salt-minion, salt_master_ip_or_hostname: "1.2.3.4" }
+        - role: johanneskastl.configure_and_start_salt-minion
+          salt_master_ip_or_hostname: "1.2.3.4"
 
 License
 -------
