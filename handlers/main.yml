@@ -2,12 +2,12 @@
 # configure_and_start_salt-minion/handlers/main.yml
 
 - name: 'Restart salt-minion.service'
-  service:
+  ansible.builtin.service:
     name: 'salt-minion.service'
     state: 'restarted'
 
 - name: 'Start salt-minion.service'
-  service:
+  ansible.builtin.service:
     name: 'salt-minion.service'
     state: 'started'
     enabled: 'true'
